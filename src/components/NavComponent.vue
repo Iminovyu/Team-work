@@ -50,9 +50,39 @@
                             <img src="../assets/images/svg/korzinka.svg" alt="">
                         </div>
                     </div>
-                    <button class="login">
+                    <button class="login" @click="OpenModal">
                         Зарегистрироваться
                     </button>
+                    <div class="bg-modal hidden"></div>
+                    <div class="modal hidden" >
+                        <div class="logo">
+                            <img src="../assets/images/svg/logo.svg" alt="">
+                            <button class="close-btn" @click="CloseModal">
+                                <img src="../assets/images/svg/closee.svg" alt="">
+                            </button>
+                        </div>
+                        <hr>
+                        <from class="form">
+                            <h2>Имя</h2>
+                            <div class="input">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <h2>Фамилия</h2>
+                            <div class="input">
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <h2>Имя пользователя</h2>
+                            <div class="input">
+                                <input type="text" placeholder="Имя пользователя">
+                            </div>
+                            <h2>пароль</h2>
+                            <div class="input">
+                                <input type="text" placeholder="пароль">
+                            </div>
+                            <router-link to="/">если у вас есть учетная запись</router-link>
+                            <button class="submit" type="submit">Зарегистрироваться</button>
+                        </from>
+                    </div>
                 </div>
             </div>
             <div class="nav-bottom">
@@ -71,7 +101,20 @@
 </template>
 
 <script setup>
-
+    
+const CloseModal = function(){
+    const modal = document.querySelector('.modal')
+    const bgModal = document.querySelector('.bg-modal')
+    modal.classList.add('hidden')
+    bgModal.classList.add('hidden')
+}
+const OpenModal = function(){
+    const modal = document.querySelector('.modal')
+    const bgModal = document.querySelector('.bg-modal')
+    modal.classList.remove('hidden')
+    bgModal.classList.remove('hidden')
+    
+}
 </script>
 
 <style lang="scss" scoped>
@@ -169,6 +212,104 @@
             text-align: left;
             cursor: pointer;
         }
+        .bg-modal{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #D9D9D980;
+            z-index: 99;
+        }
+        .modal {
+            position: fixed;
+            width: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #FFFFFF;
+            z-index: 999;
+
+            .submit {
+                padding: 13px 0px;
+                background: #E24C55;
+                cursor: pointer;
+                border: 0;
+                outline: 0;
+                font-family: "Inter", sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 15.73px;
+                color: #fff;
+            }
+
+            .form {
+                padding: 20px 20px;
+                display: flex;
+                align-content: flex-start;
+                flex-direction: column;
+
+                h2 {
+                    margin-bottom: 4px;
+                    font-family: "Inter", sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 15.73px;
+                }
+
+                .input {
+                    padding: 17px 10px;
+                    border: 1px solid #CECDCD;
+                    margin-bottom: 15px;
+
+                    input {
+                        width: 100%;
+                        color: #999999;
+                        border: 0;
+                        outline: 0;
+                        font-family: "Inter", sans-serif;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 15.73px;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    font-family: "Inter", sans-serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 15.73px;
+                    color: #0094FF;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .logo {
+                padding: 4px 15px 5px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 120px;
+                    height: 40px;
+                }
+
+                .close-btn {
+                    width: 30px;
+                    height: 20px;
+                    border: 0;
+                    outline: 0;
+
+                    img {
+                        width: inherit;
+                        height: inherit;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
     }
 
     &-bottom {
@@ -186,7 +327,7 @@
             li {
                 a {
                     text-decoration: none;
-                    font-family: 'Inter', sans-serif,;
+                    font-family: 'Inter', sans-serif, ;
                     font-size: 16px;
                     font-weight: 600;
                     line-height: 19.09px;
