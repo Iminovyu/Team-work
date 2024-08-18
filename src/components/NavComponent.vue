@@ -55,6 +55,17 @@
                     </button>
                 </div>
             </div>
+            <div class="nav-bottom">
+                <ul class="nav-list">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Распродажа</a></li>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Гарантия и возврат</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -77,6 +88,7 @@
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         .cateorogi {
             background: #E24C55;
@@ -135,9 +147,9 @@
         .cycles {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-left: 15px;
-            .item{
+            gap: 22px;
+
+            .item {
                 display: flex;
             }
         }
@@ -156,6 +168,31 @@
             line-height: 15.73px;
             text-align: left;
             cursor: pointer;
+        }
+    }
+
+    &-bottom {
+        padding: 30px 0 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: 'Inter', sans-serif,;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.09px;
+                    color: #333333;
+                }
+            }
         }
     }
 }
