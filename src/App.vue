@@ -1,6 +1,7 @@
 <template>
   <div>
-<<<<<<< HEAD
+    <NavComponent />
+
     <section class="main-info">
       <div class="container">
         <div class="product-filter">
@@ -30,10 +31,8 @@
         </div>
       </div>
     </section>
-=======
-    <NavComponent />
+
 <router-view />
->>>>>>> d4c651f0e83a8faac9b3324e447c564faceb851a
   </div>
 </template>
 
