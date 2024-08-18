@@ -32,12 +32,51 @@
             </select>
           </div>
         </div>
-        
-        <div class="cards">
-          <div class="card" v-for="card in cards" :key="card">
+        <div class="left-nav">
+          <div class="product-sections">
+            <router-link to="/">Все товары</router-link>
+            <router-link to="/">Афганские скороварки</router-link>
+            <router-link to="/">Казаны и котлы</router-link>
+            <router-link to="/">Учаги</router-link>
+            <router-link to="/">Кастрюли</router-link>
+            <router-link to="/">Мантоварки</router-link>
+            <router-link to="/">Сковороды</router-link>
+            <router-link to="/">Термосы</router-link>
+            <router-link to="/">Чайники и френч-прессы</router-link>
+            <router-link to="/">Сервировочная посуда</router-link>
+            <router-link to="/">Столовые приборы</router-link>
+            <router-link to="/">Бытовая техника</router-link>
+            <router-link to="/">Бытовая химия</router-link>
+            <router-link to="/">Товары для дома и сада</router-link>
+
+            
+          </div>
+          <div class="filter-byPrice">
+            <div class="sec-control">
+              <h1>Цена</h1>
+                <transition name="rotate">
+                  <div class="img">
+                    <img src="@/assets/images/arrow.svg" alt="arrow">
+                  </div>
+                </transition>
+              </div>
+             <transition class="appear">
+              <div class="hidenshow">
+                <p>от <span>0</span> до <span>5000</span></p>
+                <div class="slider">
+                  <div class="min"></div>
+                  <div class="max"></div>
+                </div>
+              </div>
+             </transition>
+            </div>
           </div>
         </div>
-      </div>
+          <div class="cards">
+            <div class="card" v-for="card in cards" :key="card">
+            </div>
+          </div>
+        </div>
     </section>
   
     <router-view />
@@ -58,7 +97,7 @@ axios.get('https://full-api.onrender.com/api/product/get')
     console.log(res.data.data);
   })
   .catch((err) => {
-  console.log(err)
+    console.log(err)
   })
 </script>
 
