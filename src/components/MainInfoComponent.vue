@@ -69,23 +69,12 @@
                         </div>
                   </div>
             </div>
-            <div class="cards" v-if="(cards)">
-                  <div class="item" v-for="(card, i) in cards" :key="card">
-                        <div class="card-img">
-                              <img :src="item.url" alt="card">
-                        </div>
-                        <div class="card-info">
-                              <h1>{{ item.title }}</h1>
-                              <p>{{ item.desc }}</p>
-                        </div>
-                        <div class="item" v-for="item in items" :key="item"></div>
-                        <div class="card-img">
-                              <img :src="item.url" alt="card">
-                        </div>
-                        <div class="card-info">
-                              <h1>title</h1>
-                              <p>desc</p>
-                        </div>
+            <div class="cards"></div>
+            <div class="card" v-for="card in cards" :key="card.id">
+                  <div class="card-img">
+                        <img :src="card.img" alt="card.img">
+                  </div>
+                  <div class="card-info">
                   </div>
             </div>
       </div>
@@ -95,7 +84,7 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const cards = ref([]);
+const cards = ref([])
 
 axios.get('https://full-api.onrender.com/api/product/get')
   .then((res) => {
