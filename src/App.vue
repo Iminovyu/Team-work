@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>dscasnansonaoics <span>sadcwsdw</span></h1>
+    <section class="main-info">
+      <div class="container">
+        
+      </div>
+    </section>
   </div>
 </template>
 
@@ -9,9 +13,5 @@
 </script>
 
 <style lang="scss" scoped>
-$bg-color: #000000;
 
-h1{
-  background-color: $bg-color;
-}
 </style>
