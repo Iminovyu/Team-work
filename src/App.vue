@@ -32,6 +32,11 @@
             </select>
           </div>
         </div>
+        
+        <div class="cards">
+          <div class="card" v-for="card in cards" :key="card">
+          </div>
+        </div>
       </div>
     </section>
   
@@ -42,6 +47,19 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import NavComponent from './components/NavComponent.vue';
+import axios from 'axios';
+import { ref } from 'vue';
+
+const cards = ref([]);
+
+axios.get('https://full-api.onrender.com/api/product/get')
+  .then((res) => {
+    cards.value = res.data.data
+    console.log(res.data.data);
+  })
+  .catch((err) => {
+  console.log(err)
+  })
 </script>
 
 <style lang="scss" scoped>
