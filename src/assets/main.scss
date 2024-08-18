@@ -6,13 +6,18 @@ $gray-color: rgba(196, 196, 196, 1);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'sans-serif';
 }
 .container{
     max-width: 1460px;
     margin: 0 auto;
     padding: 0 10px;
 }
+
+.hidden{
+    display: none;
+}
+
 
 body {
     background: rgba(245, 245, 245, 1);
@@ -164,3 +169,4 @@ body {
         }
     }
 }
+
