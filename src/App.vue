@@ -1,19 +1,18 @@
 <template>
   <div>
     <NavComponent />
-  
-   <section class="main-info">
-    <MainInfoComponent></MainInfoComponent>
-   </section> 
-    <router-view />
+    <HeroComponent />
+    <MainComponent />
+<router-view />
+
   </div>
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import NavComponent from './components/NavComponent.vue';
-import MainInfoComponent from './components/MainInfoComponent.vue'
-</script>
+import HeroComponent from './components/HeroComponent.vue';
+import MainComponent from './components/MainComponent.vue';
 
 <style lang="scss" scoped>
 

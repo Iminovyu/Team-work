@@ -57,13 +57,13 @@
             </div>
             <div class="nav-bottom">
                 <ul class="nav-list">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Акции</a></li>
-                    <li><a href="">Распродажа</a></li>
-                    <li><a href="">Оплата и доставка</a></li>
-                    <li><a href="">Гарантия и возврат</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><router-link to="/">Главная</router-link></li>
+                    <li><router-link to="/">Акции</router-link></li>
+                    <li><router-link to="/">Распродажа</router-link></li>
+                    <li><router-link to="/">Оплата и доставка</router-link></li>
+                    <li><router-link to="/">Гарантия и возврат</router-link></li>
+                    <li><router-link to="/">О нас</router-link></li>
+                    <li><router-link to="/">Контакты</router-link></li>
                 </ul>
             </div>
         </div>
