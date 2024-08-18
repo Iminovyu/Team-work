@@ -1,17 +1,15 @@
 <template>
   <div>
-    <h1>dscasnansonaoics <span>sadcwsdw</span></h1>
+    <NavComponent />
+<router-view />
   </div>
 </template>
 
 <script setup>
-
+import { RouterLink , RouterView } from 'vue-router';
+import NavComponent from './components/NavComponent.vue';
 </script>
 
 <style lang="scss" scoped>
-$bg-color: #000000;
 
-h1{
-  background-color: $bg-color;
-}
 </style>
