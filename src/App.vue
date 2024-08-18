@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <section class="main-info">
       <div class="container">
         <div class="product-filter">
@@ -29,11 +30,16 @@
         </div>
       </div>
     </section>
+=======
+    <NavComponent />
+<router-view />
+>>>>>>> d4c651f0e83a8faac9b3324e447c564faceb851a
   </div>
 </template>
 
 <script setup>
-
+import { RouterLink , RouterView } from 'vue-router';
+import NavComponent from './components/NavComponent.vue';
 </script>
 
 <style lang="scss" scoped>
