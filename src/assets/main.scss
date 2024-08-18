@@ -138,6 +138,11 @@ footer {
                         font-weight: 600;
                         line-height: 19.09px;
                         color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     p {
@@ -147,6 +152,11 @@ footer {
                         font-weight: 400;
                         line-height: 14px;
                         margin-left: 21px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     .p2 {
@@ -163,10 +173,10 @@ footer {
                 }
 
                 .footer-tex {
-                    margin-right: 120px;
+                    margin-right: 100px;
                 }
                 .footer-t{
-                    margin-right: 40px;
+                    margin-right: 50px;
                 }
 
                 .footer-kontact {
@@ -177,6 +187,11 @@ footer {
                             font-size: 14px;
                             font-weight: 400;
                             line-height: 16.71px;
+                            transition: 1s;
+                            cursor: pointer;
+                            &:hover{
+                                color: salmon;
+                            }
                         }
 
                         .pp2 {
@@ -196,6 +211,11 @@ footer {
 
                     p {
                         color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     .white {
@@ -205,6 +225,11 @@ footer {
                         font-weight: 600;
                         line-height: 19.09px;
                         color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
                 }
             }
@@ -223,14 +248,29 @@ footer {
 
                     .orta {
                         text-align: center;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     .bosh {
                         margin-left: 11px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     .oxiri {
                         margin-right: 80px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
                     }
 
                     p {
