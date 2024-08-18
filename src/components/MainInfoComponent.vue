@@ -70,7 +70,7 @@
                   </div>
             </div>
             <div class="cards" v-if="(cards)">
-                  <div class="item" v-for="(card ) in cards" :key="card.id">
+                  <div class="item" v-for="(card, i) in cards" :key="card">
                         <div class="card-img">
                               <img :src="item.url" alt="card">
                         </div>
