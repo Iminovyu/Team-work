@@ -69,7 +69,16 @@
                         </div>
                   </div>
             </div>
-            <div class="cards"></div>
+            <div class="cards">
+                <div class="card" v-for="card in cards" :key="card">
+                    <img :src="card.url" alt="">
+                    <p>{{ card.name }}</p>
+                    <div class="price">
+                        <p>{{ card.oldprice }}</p>
+                        <p>{{ card.newprice }}</p>
+                    </div>
+                </div>
+            </div>
 
 </div>
 </template>
