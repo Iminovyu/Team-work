@@ -1,6 +1,4 @@
-@import './fonts.scss';
-$red-color: rgba(245, 85, 85, 1);
-$gray-color: rgba(196, 196, 196, 1);
+@import  './fonts.scss';
 
 * {
     margin: 0;
@@ -9,7 +7,7 @@ $gray-color: rgba(196, 196, 196, 1);
     font-family: 'Inter', 'sans-serif';
 }
 .container{
-    max-width: 1460px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -170,3 +168,287 @@ body {
     }
 }
 
+
+// .register {
+//     position: absolute;
+//     left: 100px;
+//     width: 265.7px;
+//     height: 269px;
+//     background: url(./images/png/idish-tovoqlar.png);
+//     background-repeat: no-repeat;
+//     .container {
+//         .register-content {
+//             h2 {
+//                 font-family: 'inter';
+//                 font-size: 24px;
+//                 font-weight: 700;
+//                 line-height: 28.64px;
+//                 text-align: center;
+//             }
+
+//             .register-bottom {
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: flex-end;
+//                 .register-left {}
+//                 .register-right {
+//                     display: flex;
+//                     flex-direction: column;
+
+//                     h3 {
+//                         font-family: 'inter';
+//                         font-size: 20px;
+//                         font-weight: 400;
+//                         line-height: 23.87px;
+//                         text-align: center;
+//                         margin-bottom: 18px;
+//                     }
+
+//                     button {
+//                         margin-top: 18px;
+//                         width: 296.21px;
+//                         height: 50px;
+//                         border-radius: 1px 0px 0px 0px;
+//                         border: none;
+//                         background: #E24C55;
+
+//                         p {
+//                             font-family: SF Pro Display;
+//                             font-size: 18px;
+//                             font-weight: 500;
+//                             line-height: 21.48px;
+//                             text-align: center;
+//                             color: white;
+//                         }
+//                     }
+
+//                     .register-right-inputs {
+//                         margin-bottom: 7px;
+
+//                         p {
+//                             font-family: 'inter';
+//                             font-size: 16px;
+//                             font-weight: 300;
+//                             line-height: 19.09px;
+//                             text-align: left;
+//                         }
+
+//                         input {
+//                             width: 294px;
+//                             height: 39px;
+//                             border: 1px solid #E24C55;
+//                             background-color: #E8E8E8;
+
+//                         }
+
+
+//                     }
+
+//                     .register-right-checkbox {
+//                         display: flex;
+//                         margin-top: 13px;
+//                         p {
+//                             font-family: 'Inter';
+//                             width: 200px;
+//                             font-size: 12px;
+//                             font-weight: 400;
+//                             line-height: 14.32px;
+//                             color: red;
+//                             width: 300px;
+//                             height: 15px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+footer {
+    background: #333333;
+
+    .container {
+        .footer-content {
+            .footer-top {
+                img {
+                    padding-bottom: 7.85px;
+                }
+
+                margin-bottom: 21.6px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .line {
+                    width: 100%;
+                    border: 1px solid #FFFFFF
+                }
+            }
+
+            .footer-center {
+                display: flex;
+
+                .footer-texts {
+                    .white {
+                        margin-bottom: 20px;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19.09px;
+                        color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    p {
+                        color: #FFFFFF;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 14px;
+                        margin-left: 21px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    .p2 {
+                        margin-bottom: 10px;
+                    }
+
+                    .p3 {
+                        margin-top: 41px;
+                    }
+                }
+
+                .footer-te {
+                    margin-right: 30px;
+                }
+
+                .footer-tex {
+                    margin-right: 100px;
+                }
+                .footer-t{
+                    margin-right: 50px;
+                }
+
+                .footer-kontact {
+                    .pp {
+                        margin-bottom: 10px;
+                        .pp1 {
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.71px;
+                            transition: 1s;
+                            cursor: pointer;
+                            &:hover{
+                                color: salmon;
+                            }
+                        }
+
+                        .pp2 {
+                            font-family: "Inter";
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 16.71px;
+                        }
+                    }
+                    
+                    .i-t{
+                        display: flex;
+                        margin-bottom: 10px;
+                    }
+                    .i-t2{
+                        display: flex;
+                    }
+
+                    p {
+                        color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    .white {
+                        margin-bottom: 20px;
+                        font-family: "Inter";
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 19.09px;
+                        color: #FFFFFF;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+                }
+            }
+
+            .footer-bottom {
+                .line {
+                    margin-top: 23px;
+                    width: 100%;
+                    border: 1px solid #FFFFFF;
+                    margin-bottom: 15px;
+                }
+
+                .end {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .orta {
+                        text-align: center;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    .bosh {
+                        margin-left: 11px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    .oxiri {
+                        margin-right: 80px;
+                        transition: 1s;
+                        cursor: pointer;
+                        &:hover{
+                            color: salmon;
+                        }
+                    }
+
+                    p {
+                        color: #FFFFFF;
+                        max-width: 300px;
+                        font-family: "Inter";
+                        font-size: 12px;
+                        font-weight: 300;
+                        line-height: 16.88px;
+
+                        span {
+                            color: #FFFFFF;
+                            font-family: "Inter";
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: 16.88px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
