@@ -43,13 +43,32 @@
                             онлайн-оплаты</p>
                     </div>
                 </div>
-                <div class="hero-right"></div>
+                <Swiper :slides-per-view="1">
+                    <SwiperSlide v-for="img in images" :key="img">
+                        <img :src="img.url" alt="">
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import axios from 'axios';
+import { ref } from 'vue';
+
+const images = ref([])
+
+axios.get('https://full-api.onrender.com/api/new-img/get')
+  .then((res) => {
+    images.value = res.data.data
+    console.log(res.data.data);
+  })
+  .catch((err) => {
+    console.log(err)
+  })
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 </script>
 
 <style lang="scss" scoped>
@@ -87,6 +106,9 @@
                 text-align: center;
             }
         }
+    }
+    .mySwiper {
+        width: 847px;
     }
 }
 </style>
