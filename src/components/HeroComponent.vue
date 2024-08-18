@@ -43,9 +43,9 @@
                             онлайн-оплаты</p>
                     </div>
                 </div>
-                <Swiper :slides-per-view="1">
+                <Swiper class="mySwiper" :slides-per-view="1">
                     <SwiperSlide v-for="img in images" :key="img">
-                        <img :src="img.url" alt="">
+                        <img class="swiperImg" :src="img.url" alt="">
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -108,7 +108,12 @@ import 'swiper/css';
         }
     }
     .mySwiper {
-        width: 847px;
+        width: 100%;
+        height: 378px;
+        .swiperImg{
+            width: inherit;
+            height: inherit;
+        }
     }
 }
 </style>
