@@ -1,12 +1,106 @@
-@import  './fonts.scss';
+@import './fonts.scss';
+$red-color: rgba(245, 85, 85, 1);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
-.container{
+
+.container {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+body {
+    background: rgba(245, 245, 245, 1);
+    scroll-behavior: smooth;
+}
+
+.product-filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+
+    .product-count {
+        h1 {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19.09px;
+            text-align: left;
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                text-align: left;
+
+            }
+        }
+
+    }
+
+    .product-types {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+        label {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19.09px;
+            text-align: left;
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+
+            input[type="radio"] {
+                display: none;
+
+                &:checked+.custom-radio {
+                    background-color: $red-color;
+                    border-color: $red-color;
+                }
+            }
+
+            .custom-radio {
+                width: 16px;
+                height: 16px;
+                border: 2px solid #999;
+                border-radius: 50%;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: transparent;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: background-color 0.2s ease;
+                }
+            }
+
+            input[type="radio"]:checked+.custom-radio::after {
+                background-color: white;
+            }
+        }
+    }
+
+    .product-select{
+        select{
+            background: #fff;
+            outline: none;
+            border: #fff;
+            padding: 10px;
+
+        }
+    }
 }
